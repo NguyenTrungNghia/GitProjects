@@ -2,6 +2,11 @@ package com.ntrungnghia.formula;
 
 import com.ntrungnghia.exception.PiAppBaseException;
 
+/**
+ * The LeibnizTask is a the implementation of Formula interface, override
+ * calculate method to compute pi number from a segment of serial by using
+ * Nilakantha formula and return the sum of this segment.
+ */
 public class NilakanthaFormula implements Formula {
 
     private NilakanthaFormula() {
