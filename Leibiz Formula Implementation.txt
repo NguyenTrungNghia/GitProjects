@@ -1,0 +1,12 @@
+﻿1.	Problems
+Build a calculator application that calculate an approximation to the constant Pi (π) by using Leibiz formula and it must to make a good use of the available resources and take a long time to calculate the constant Pi.
+
+2.	Solutions
+Divides the serial into M segment, compute T segments (T is number of threads - the available processors by default) at the same time with Leibniz formula by using multi-thread and store each segment result into a linked list. When the size of linked list is greater than 100, cumulative all the elements into P (P is pi number - P = 0 by default). In order that, it does not waste the free memory and it does not take a long time to stop the pi calculation.
+See the following step for easy visualization :
+Step 1: Input N, T.
+Step 2: Divide n into M segments.
+Step 3: Calculates T segments at the same time, assign INDEX += T (INDEX = 0 by default).
+Step 4: Add each segment result into a linked list.
+Step 5: If the size of list is less than 100 then go back to step 3, otherwise visit the results in the list and cumulative all the elements into P.
+Step 6: If INDEX <= M then go back to step 3, otherwise print the pi number and exit the program.
